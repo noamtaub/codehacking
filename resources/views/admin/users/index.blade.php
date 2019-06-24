@@ -12,6 +12,7 @@
             <th scope="col">Email</th>
             <th scope="col">Role</th>
             <th scope="col">Status</th>
+            <th scope="col">Path</th>
             <th scope="col">Created At</th>
             <th scope="col">Updated At</th>
         </tr>
@@ -26,6 +27,7 @@
                     <td>{{$user->email}}</td>
                     <td>{{$user->role->name}}</td>
                     <td>{{$user->is_activ == 1 ? 'Active' : 'Not Active'}}</td>
+                    <td>{{$user->photo_id}}</td>
                     <td>{{$user->created_at->diffForHumans()}}</td>
                     <td>{{$user->updated_at}}</td>
                 </tr>
