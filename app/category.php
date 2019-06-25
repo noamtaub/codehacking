@@ -4,11 +4,10 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Role extends Model
+class category extends Model
 {
     //
-    protected $fillable = [
-        'role_id',
+    protected $fillable =[
         'name'
     ];
 }
